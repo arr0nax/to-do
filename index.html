@@ -9,12 +9,41 @@
     <title>To Do List</title>
   </head>
   <body>
-    <form class="task" action="index.html" method="post">
-      <label for="task">Enter something for your To Do list</label>
-      <input type="text" id="task" value="">
-      <button type="submit" class="btn" name="button">Add</button>
-    </form>
-    <ul class="list">
-    </ul>
+    <div class="jumbotron">
+      <h1>My To-Do List</h1>
+    </div>
+    <div class="row">
+      <form class="task form" action="index.html" method="post">
+        <div class="col-md-4">
+          <ul class="formList">
+            <li><label for="task">Enter something for your To Do list</label></li>
+            <li><label for="equipment">What equipment will I need</label></li>
+            <li><label for="timeFrame">How long should this task take?</label></li>
+            <li><button type="submit" class="btn btn-info" name="button">Add</button></li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <ul class="formList">
+            <li><input type="text" id="task" value=""></li>
+            <li><input type="text" id="equipment"></li>
+            <li><input type="text" id="timeFrame"></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <form class="list">
+        <div class="col-md-4">
+          <ul class="taskList">
+
+            <span class="formList"><li><button type="submit" class="btn btn-success" name="button">Done!</button></li></span>
+          </ul>
+        </div>
+        <div class="col-md-8">
+        </div>
+      </form>
+    </div>
+    <div id="result">
+
   </body>
 </html>
